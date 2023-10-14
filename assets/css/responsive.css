@@ -224,15 +224,15 @@
   }
 
   .heading__foreground h3 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .heading__foreground h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   #header > span {
-    bottom: 44px;
+    bottom: 20px;
     position: absolute;
     right: 2%;
     font-size: 1rem;
