@@ -1,0 +1,55 @@
+/* PC */
+/* Được sử dụng trong các truy vấn phương tiện để áp dụng các kiểu khác nhau cho các loại/thiết bị phương tiện khác nhau */
+@media (min-width: 1024px) {
+}
+
+/* Tablet */
+/* 768 x 1024 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #myCarousel {    
+    height: calc(1010px - 550px);
+  }
+
+  .carousel {
+    /* height: calc(1010px - 550px) */
+    /* height: calc(1010px - 566px); */
+  }
+
+  .carousel-indicators {
+    bottom: -2px;
+  }
+
+  .carousel-inner {
+    bottom: -15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .testiomonial__item {
+    margin: 0 9%;
+    min-height: 250px;
+    top: 50px;
+  }
+  
+  .testiomonial__item::before {
+    width: 100%;
+  }
+  
+  #myCarousel {
+    height: calc(1010px - 626px);
+    /* height: calc(1010px - 698px); */
+  }
+
+  .carousel-inner {
+    height: 332px;
+    /* top: 50px; */
+  }
+
+  .carousel-indicators {
+    bottom: -12px;
+    /* bottom: -7px; */
+  }
+}
+
+/* height: calc(1010px - 566px); */

@@ -1,0 +1,136 @@
+/* Animation */
+/* Chỉ định mã hoạt hình */
+@keyframes fadeIn {
+  /* (same as 0%) */
+  from {
+    /* Độ mờ */
+    opacity: 0;
+  } /* (same as 100%) */
+  to {
+    opacity: 1;
+  }
+}
+
+/* mờ dần */
+@keyframes darken {
+  from {    
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes arrowUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.85);
+  }
+}
+
+@keyframes navFadeIn {
+  from {
+    background-color: rgba(54, 19, 84, 0.85);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes navGradually {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(54, 19, 84, 0.85);
+  }
+}
+
+@keyframes headingX {
+  from {
+    /* transform: translateX(calc(0px - var(--view-width))); */
+    transform: translateX(-700px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes XChiCon {
+  from {
+    /* 811px */
+    /* transform: translateX(100px); */
+    transform: translateX(611px); 
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/*&nbsp;Chỉ&nbsp;định&nbsp;mã&nbsp;hoạt&nbsp;hình&nbsp;*/
+@keyframes navY {
+  from {
+    transform: translateY(calc(0px - var(--navbar-height)));
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes oneEggY {
+  from {
+    /* transform: translateY(calc(0px - var(--view-height))); */
+    transform: translateY(185px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes threeEggY {
+  from {
+    transform: translateY(-145px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Frames */
+/* xoay logo */
+@keyframes exampFooter {
+  from {
+    transform: rotate(0deg);
+  } 
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+/* temp */
+/* to dần lên */
+@keyframes growth {
+  from {
+    /* thay đổi tỷ lệ kích thước của một phần tử */
+    transform: scale(var(--growth-from));
+  } to {
+    transform: scale(var(--growth-to));
+  }
+}
