@@ -1,6 +1,5 @@
 # ChickenFarm
 
-# HCodeHub.github.io
 ### Hi, I'm Huu Kevin - aka [HCode][website] = Software Engineer 🌱 
 
 - 🔭 I am passionate about Game Software and Arduino
