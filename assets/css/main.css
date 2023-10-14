@@ -1,23 +1,6 @@
-@font-face {
-  font-family: Nocturne-Serif;
-  src: url(https://chuong3x.github.io/natalieandcharlie/asset/font/text-fonts/nocturne_serif_light.ttf) format('truetype');
-}
-
-/* @font-face kit by Fonts2u (https://fonts2u.com) */
-@font-face {
-  font-family: "The Historia Demo";
-  src: url("https://thobui997.github.io/public/fonts/TheHistoriaDemo.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* ẩn thanh cuộn */
-body::-webkit-scrollbar {
-  display: none;
-}
-
-body {
-  /* width: 1024px; */
+p,
+h3 {
+  color: #fff;
 }
 
 i {
