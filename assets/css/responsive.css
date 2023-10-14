@@ -1,0 +1,494 @@
+/* PC */
+/* Được sử dụng trong các truy vấn phương tiện để áp dụng các kiểu khác nhau cho các loại/thiết bị phương tiện khác nhau */
+@media (min-width: 1024px) {
+}
+
+/* Tablet */
+/* 768 x 1024 */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .heading__foreground {
+    left: 6%;
+  }
+
+  .heading__foreground h3 {
+    font-size: 7rem;
+  }
+
+  .heading__foreground h2 {
+    font-size: 4rem;
+  }
+
+  .paragraph {
+    font-size: 1.6rem;
+  }
+
+  /*  */
+  #egg img {
+    width: 48%;
+  }
+
+  .egg__one {
+    padding: 10px 10px 0px 0px;
+  }
+
+  .egg__one--content {
+    margin: 25px 22px 0px 0px;
+  }
+
+  .egg__two {
+    padding: 48px 0px 48px 10px;
+  }
+
+  .egg__two--content {
+    margin: 25px 0px 0px 22px;
+  }
+
+  .egg__three {
+    padding-right: 10px;
+  }
+
+  .egg__three--content {
+    margin: 25px 22px 0px 0px;
+  }
+
+  /*  */
+  .chicken-recipes__lcr {
+    width: 91%;
+    bottom: 68px;
+  }
+
+  .chicken-recipes__lcr img {
+    left: 8%;
+    bottom: 20px;
+
+    width: 83%;
+    height: 530px;
+  }
+
+  /*  */
+  .box--center {
+    width: auto;
+  }
+
+  .container {
+  }
+
+  .cards .card {
+    width: 656px;
+    padding: 20px 25px;
+    /* left: 6px; */
+  }
+
+  .cards label {
+    width: 650px;
+  }
+
+  .infos .name {
+  }
+
+  .infos .lorem {
+  }
+
+  .image-gird {
+    height: 154px;
+  }
+
+  .image-gird img {
+  }
+
+  .card .infos {
+  }
+
+  .card .btn-contact {
+    height: 55px;
+    margin: 16px auto;
+  }
+
+  #s1:checked ~ .cards #slide3,
+  #s2:checked ~ .cards #slide1,
+  #s3:checked ~ .cards #slide2 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-12.5%, 0, -120px);
+  }
+
+  #s1:checked ~ .cards #slide1,
+  #s2:checked ~ .cards #slide2,
+  #s3:checked ~ .cards #slide3 {
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+    transform: translate3d(2%, 0, 0);
+  }
+
+  #s1:checked ~ .cards #slide2,
+  #s2:checked ~ .cards #slide3,
+  #s3:checked ~ .cards #slide1 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(17%, 0, -120px);
+  }
+
+  /*  */
+  .footer__say {
+    height: calc(var(--screen-height) - 550px);
+  }
+
+  /*  */
+  .col-3 {
+    padding: 0 12px 0 12px;
+  }
+
+  .contact__container {
+    height: 550px;
+    padding: 40px 16px 20px 16px;
+  }
+
+  .contact__container::before {
+    transform: translateY(-40px);
+    height: 550px;
+  }
+
+  .about {
+    height: calc(550px - 50px - 20px - 20px);
+  }
+
+  .footer-logo-img {
+    height: auto;
+  }
+
+  .contact--item a::before {
+    width: 30px;
+    left: -40px;
+  }
+
+  .copyright {
+    margin-top: 10px;
+  }
+}
+
+/* Mobile */
+/* 320x480 */
+@media (max-width: 768px) {
+  .header__navbar > .fa-heart {
+    display: none;
+  }
+
+  .header__navbar-list {
+    display: none;
+  }
+
+  .menu-toggler {
+    width: 60px;
+    display: grid;
+    align-content: space-around;
+    /* Chuyển tiếp CSS cho phép bạn thay đổi giá trị thuộc tính một cách trơn tru trong một khoảng thời gian nhất định. */
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+
+  .toggler__navbar-list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    align-items: center;
+    display: flex;
+    font-family: "The Historia Demo", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: cornsilk;
+    text-shadow: 0.5px 0.5px 1px #000;
+    opacity: 0;
+    /* chỉ định cách xử lý khoảng trắng bên trong một phần tử. */
+    white-space: pre;
+  }
+
+  .heading__foreground {
+    left: 10%;
+  }
+
+  .heading__foreground h3 {
+    font-size: 4rem;
+  }
+
+  .heading__foreground h2 {
+    font-size: 3rem;
+  }
+
+  #header > span {
+    bottom: 20px;
+    position: absolute;
+    right: 2%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Gt-Light, sans-serif;
+    font-weight: 500;
+    color: var(--white-color);
+    letter-spacing: 0.1rem;
+    opacity: 0;
+  }
+
+  /*  */
+  #chicken {
+    flex-wrap: wrap;
+    height: 1540px;
+    background: url(https://thobui997.github.io/public/images/sitebg.jpg) repeat 0 0;
+  }
+
+  .chicken__image {
+    width: auto;
+    height: auto;
+  }
+
+  .chicken__content {
+    width: auto;
+    height: auto;
+
+    opacity: 1;
+  }
+
+  .content-text {
+    opacity: 1;
+  }
+
+  .chicken__content--text {
+    text-align: center;
+  }
+
+  /*  */
+  #egg {
+    height: auto;
+    text-align: center;
+    background: url(https://thobui997.github.io/public/images/sitebg.jpg) repeat 0 0;
+  }
+
+  #egg img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #egg .paragraph {
+    text-align: center;
+  }
+
+  .egg__one,
+  .egg__three {
+    padding: 0 0 14px 0;
+    display: inline-block;
+  }
+
+  .egg__one--content,
+  .egg__two--content,
+  .egg__three--content {
+    margin: 0px;
+  }
+
+  .egg__two {
+    padding: 48px 0px 48px 0px;
+    flex-direction: column-reverse;
+  }
+
+  .egg__two img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /*  */
+  #chicken-recipes {
+  }
+
+  .chicken-recipes__h2 {
+    margin-bottom: 0;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .chicken-recipes__lcr {
+    width: 91%;
+    height: 84%;
+  }
+
+  .chicken-recipes__lcr i {
+    right: 45%;
+    bottom: 42%;
+  }
+  
+  .chicken-recipes__lcr img {
+    left: 2%;
+    width: 95%;
+    height: auto;
+    top: 59%;
+  }
+
+  .chicken-recipes__one-ls {
+    margin-top: auto;
+    left: 30%;
+    font-weight: 400;
+  }
+  
+  .chicken-recipes__one-ls ul {
+    margin-right: initial;
+  }
+
+  .chicken-recipes__one-ls ul:nth-child(2) {
+    margin-left: 40px;
+  }
+  
+  /*  */
+  #egg-recipes {
+    
+  } 
+
+  .box--center {
+    width: auto;
+  }
+
+  .container {
+  }
+
+  .cards .card {
+    width: 330px;
+    padding: 10px 15px;
+    height: 755px;
+  }
+
+  .cards label {
+    width: 329px;
+    height: 760px;
+  }
+  
+  .flip-box {
+    width: 300px;
+  }
+
+  .infos .name {
+    margin-bottom: 0px;
+    letter-spacing: normal;
+  }
+
+  .infos .lorem {
+    letter-spacing: inherit;
+    font-size: 12px;
+  }
+
+  .image-gird {
+    height: 154px;
+  }
+
+  .image-gird img {
+  }
+
+  .card .infos {
+    padding-top: 10px;
+  }
+
+  .card .image {
+    justify-content: normal;
+  }
+
+  .card .image img {
+    margin-right: 24px;
+    margin-left: 10px
+  }
+
+  .card .btn-contact {
+    height: 55px;
+    margin: 10px auto;
+  }
+
+  .flip-box-inner {
+    width: 70%;
+  }
+
+  #s1:checked ~ .cards #slide3,
+  #s2:checked ~ .cards #slide1,
+  #s3:checked ~ .cards #slide2 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-17%, 0, -120px);
+  }
+
+  #s1:checked ~ .cards #slide1,
+  #s2:checked ~ .cards #slide2,
+  #s3:checked ~ .cards #slide3 {
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+    transform: translate3d(2%, 0, 0);
+  }
+
+  #s1:checked ~ .cards #slide2,
+  #s2:checked ~ .cards #slide3,
+  #s3:checked ~ .cards #slide1 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(23%, 0, -120px);
+  }     
+
+  /*  */
+  .contact__container {
+    background: url(https://i.stack.imgur.com/p9mUO.jpg) repeat;
+  }
+
+  .contact__container::before {
+    height: 890px;
+  }
+  
+  .contact__container .grid .row:nth-child(1) {
+    display: none;
+  }
+
+  .contact__container .grid .row:nth-child(3) {
+    padding-top: 50px;
+  }
+
+  .contact__container .grid .row:nth-child(2),
+  .contact__container .grid .row:nth-child(3) {
+    display: flex;
+  }
+
+  .four-p {
+    margin-top: 0px;
+  }
+
+  #footer {
+    height: auto;
+  }
+
+  .footer__say {
+    height: calc(var(--screen-height) - 610px);
+  }
+
+  .footer-logo-img {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .testiomonial__item {
+    min-height: auto;
+    max-width: 468px;
+  }
+
+  .testiomonial__item p {
+    margin: 0px;
+  }
+
+  .testiomonial__item span {
+    margin-bottom: 0px;
+  }
+
+  .contact__container {
+    height: auto;
+  }
+
+  .col-6 .about {
+    height: auto;
+  }
+
+  .copyright:nth-child(2) {
+    display: none;
+  }
+
+  .copyright:nth-child(3) {
+    display: block;
+  }
+}

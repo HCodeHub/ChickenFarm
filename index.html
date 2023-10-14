@@ -1,0 +1,740 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Chicken Farm</title>
+    <meta charset = "UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- Favicon là một hình ảnh nhỏ được hiển thị bên cạnh tiêu đề trang trong tab trình duyệt -->
+    <link
+      rel="icon"
+      href="https://fullstack.edu.vn/favicon/favicon_32x32.png"
+      type="image/x-icon"
+    />
+    <!-- reset css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!-- add icon fontawesome .css" -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- link fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>    
+    <!-- Noctume Serif -->
+
+    <!-- một thư viện JavaScript được thiết kế đơn giản hóa thao tác HTML DOM, cũng như xử lý sự kiện, hoạt ảnh CSS, và Ajax -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>  
+
+    <!-- thư viện Bootstrap để tạo Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>      
+
+    <!-- đường dẫn css (lưu ý: phải để cuối) -->
+    <link rel = "stylesheet" href = "assets/animation/base.css"/>
+    <link rel = "stylesheet" href = "assets/css/base.css"/>
+    <link rel = "stylesheet" href = "assets/css/main.css"/>
+    <link rel = "stylesheet" href = "assets/css/responsive.css"/>
+
+    <!-- để sau css cho Bootstrap egg recipe không bị ghi đè -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  </head>
+
+  <!-- phần thân -->
+  <body>
+    <!-- Đầu trang -->
+    <header id = "header">      
+      <!-- Navigation (Điều hướng) -->
+      <nav class = "header__navbar js-header__navbar">        
+        <img src = "./lib/mini-logo.png"/>
+        <ul class = "header__navbar-list">
+          <li><a href = "#header">HOME</a></li>
+          <li><a href = "#chicken">CHICKEN</a></li>
+          <li><a href = "#egg">EGG</a></li>
+          <li><a href = "#chicken-recipes">CHICKEN RECIPES</a></li>
+          <li><a href = "#egg-recipes">EGG RECIPES</a></li>
+          <li><a href = "#footer">CONTACT</a></li>
+        </ul>
+        <span class = "title">HOME</span>
+        <i class="fa-regular fa-heart"></i>
+        <div class = "menu-toggler" onclick = "toggler()">
+          <span class = "start"></span>
+          <span class = "bar"></span>
+          <span class = "end"></span>
+        </div>        
+      </nav>
+
+      <div class = "header__toggler">
+        <ul class = "toggler__navbar-list" onclick = "toggler()">
+          <li><a href = "#header">HOME</a></li>
+          <li><a href = "#chicken">CHICKEN</a></li>
+          <li><a href = "#egg">EGG</a></li>
+          <li><a href = "#chicken-recipes">CHICKEN &nbspRECIPES</a></li>
+          <li><a href = "#egg-recipes">EGG &nbspRECIPES</a></li>
+          <li><a href = "#footer">CONTACT</a></li>
+        </ul>
+      </div>
+      <!-- Tiền cảnh -->
+      <div class = "heading__foreground">
+        <h3>Chuyên Cung Cấp</h3>
+        <h2>&nbsp;Gà & Trứng</h2>
+      </div>            
+      <span>Truồng trại thoáng mát cho đàn gà luôn khỏe</span>
+      <a href = "#header"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    </header>
+    
+    <!-- Nội dung chính -->
+    <section class = "content">
+      <!-- xác định một phần trong tài liệu -->
+      <div id = "chicken" >
+        <div class = "chicken__image">
+          
+        <img src = "./lib/ok-chia-khoa-lap-trinh.png"/>
+        </div>
+        <div class = "chicken__content">
+          <h2 class = "heading-2">Giá trị dinh dưỡng từ thịt gà</h2>
+
+          <div class = "chicken__content--text paragraph">
+            <div class = "content-text js-content">
+              <p><b><br>Ức gà: 284 Calo</b></p>
+              <p>            
+                Ức gà là một trong những lựa chọn phổ biến nhất do có hàm lượng protein cao và ít chất béo, khiến nó trở thành thực phẩm tuyệt vời cho những người đang cố gắng giảm cân.
+                <br>(172 gram) sẽ cung cấp các thành phần dinh dưỡng sau đây:<br>
+              </p>
+              <ul>
+                <li>Lượng calo: 284</li>
+                <li>Protein: 53,4 gram</li>
+                <li>Chất béo: 6,2 gram</li>
+              </ul>       
+            </div>
+
+            <div class = "content-text js-content">
+              <p><b><br>Thịt đùi gà: 109 Calo</b></p>
+              <p>
+                Đùi gà hơi mềm và có hương vị thơm ngon hơn ức gà do hàm lượng chất béo cao hơn. (52 gram) chứa:<br>
+              </p>
+              <ul>
+                <li>Lượng calo: 109</li>
+                <li>Protein: 13,5 gram</li>
+                <li>Chất béo: 5,7 gram</li>
+              </ul> 
+            </div>
+
+            <div class = "content-text js-content">
+              <p><b><br>Cánh gà: 43 Calo</b></p>
+              <p>
+                Cánh gà là bộ phận ít thịt, có lớp da và phần gân giòn, cùng một ít mỡ béo không gây cảm giác ngán cho người dùng khi ăn. (21 gram) chứa:<br>
+              </p>
+              <ul>
+                <li>Lượng calo: 42,6</li>
+                <li>Protein: 6,4 gram</li>
+                <li>Chất béo: 1,7 gram</li>
+              </ul>
+            </div>
+
+            <div class = "content-text js-content">
+              <p><b><br>Má đùi gà: 76 Calo</b></p>
+              <p>
+                Chân gà được tạo thành từ hai phần - đùi và má đùi gà. (44 gram) chứa:<br>
+              </p>               
+              <ul>
+                <li>Lượng calo: 76</li>
+                <li>Protein: 12,4 gram</li>
+                <li>Chất béo: 2,5 gram</li>
+              </ul>            
+            </div>
+          </div>              
+        </div>
+      </div>
+      <div id = "egg">
+        <div class = "egg__one">
+          <div class = "egg__one--content">
+            <h2 class = "heading-2 historia-font">"Eat Clean" Cho Cả Gia Đình</h2>
+            <p class = "paragraph">
+              Phù hợp cho các chế độ ăn có kiểm soát như Gymer, Keto, Eatclear bởi hàm lượng đạm cao, hạn chế thèm ăn để kiểm soát cân nặng. Có thể sử dụng căn bằng với các loại đạm từ thịt trắng, thực vật để giảm thịt đỏ.
+            </p>
+          </div>
+          <img src = "./lib/lam-dep-voi-trung-ga-ta.jpg">
+        </div>
+
+        <div class = "egg__two">
+          <img src = "./lib/trung2.jpg"/>
+          <div class = "egg__two--content">
+            <h2 class = "heading-2 historia-font">Tốt Cho Sự Phát Chiển Của Trẻ Em</h2>
+            <p class = "paragraph">
+              Hàm lượng canxi cao giúp trẻ em phát triển chiều cao, cùng với Choline giúp phát triển não bộ. Trứng còn chứa hàm lượng Lutein & Zeaxanthine lớn, giúp trẻ tăng thị lực.
+            </p>
+          </div>
+        </div>
+
+        <div class = "egg__three">
+          <div class = "egg__three--content">
+            <h2 class = "heading-2 historia-font">Tốt Cho Mẹ Bầu & Em Bé</h2>
+            <p class = "paragraph">
+              Choline trong trứng hỗ trợ phát triển hệ thần kinh của thai nhi. Trứng có khối lượng lớn (khoảng 60g/quả), chứa dồi dào dinh dưỡng & khoáng chất giúp mẹ bầu đủ chất, hạn chế cơn đói.
+            </p>
+          </div>
+          <img src = "./lib/trung-gia-cam-nao-bo-nhat-ga-vit-ngong-cut-hay-bo-cau.jpg"/>        
+        </div>
+      </div>
+      <div id = "chicken-recipes">
+        <!-- Carousel -->
+        <div id="the-carousel" class="carousel slide" data-interval="false">  
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">            
+              <!-- Left -->
+              <div class = "chicken-recipes__left chicken-recipes__lcr paragraph">
+                <i class="fa-solid fa-forward" onclick = "chiRecLCRForward('.chicken-recipes__left')"></i>          
+
+                <div class = "chicken-recipes__left--one chicken-recipes--all">
+                  <h2 class = "chicken-recipes__h2 heading-2">Nguyên liệu cho món gà chiên nước mắm</h2>
+                  <div class = "chicken-recipes__one-ls">
+                    <ul>
+                      <li>400g cánh gà</li>
+                      <li>1 bó rau thơm</li>
+                      <li>1 bó rau xà lách</li>
+                      <li>2 củ tỏi</li>
+                      <li>2 quả cà chua</li>
+                      <li>1 quả dưa leo</li>              
+                      <li>đường</li>
+                      <li>nước mắm</li>
+                    </ul>              
+                  </div>
+                  <img src = "./lib/egg-1-1.jpg">
+                </div>
+
+                <div class = "chicken-recipes__left--two chicken-recipes--all ttf-none">
+                  <h2 class = "chicken-recipes__h2 heading-2">Bước 1: Sơ chế các nguyên liệu</h2>
+                  <p>
+                    Đầu tiên cánh gà sau khi bạn mua về thì đem đi rửa sạch để ráo và có thể đem hấp qua 10 phút để khi chiên được nhanh hơn và thịt được chín đều. Tiếp đó các bạn sơ chế các nguyên liệu như các loại rau thì rửa sạch, để ráo. tỏi thì lột vỏ rồi băm nhuyễn. cà chua, dưa leo thì rửa sạch thái lát mỏng vừa ăn.
+                  </p>
+                  <img src = "./lib/egg-1-2.jpg">
+                </div>
+
+                <div class = "chicken-recipes__left--three chicken-recipes--all ttf-none">
+                  <h2 class = "chicken-recipes__h2 heading-2">Bước 2: Làm gà chiên mắm sao cho ngon</h2>
+                  <p>
+                    Đầu tiên các bạn chuẩn bị một cái chảo dầu, đợi dầu nóng thì cho cánh gà đã để ráo vào. Bạn nên cho lượng dầu vừa đủ để chiên gà và nên trở liên tục để cánh gà được vàng đều. Tiếp đó đợi đến khi thấy cánh gà đã vàng thì vớt ra và bỏ ra dĩa đã có giấy thấm dầu.
+                  </p>
+                  <img src = "./lib/egg-1-3.jpg">
+                </div>
+
+                <div class = "chicken-recipes__left--four chicken-recipes--all ttf-none">
+                  <p class = "four-p">
+                    Kế đến thì làm phần nước chấm với công thức pha 1 đường : 1 mắm cho vào chén rồi khuấy đều lên. Tiếp đó bạn chuẩn bị một cái chảo dầu rồi cho phần tỏi đã băm nhuyễn vào phi thơm lên rồi mới đổ phần nước chấm pha vào. Sau đó thì mới cho cánh gà đã chiên vàng vào và đảo đều để nước sốt bám đều trên cánh gà là được.
+                    <br><br>Đợi đến khi thấy cánh gà có màu vàng bắt mắt và nước sốt sánh sệt lại thì mới tắt bếp. Cuối cùng thì vớt gà ra dĩa, trang trí thêm vài lá xà lách và vài miếng dưa leo, cà chua. Thế là đã có một món gà chiên nước mắm thơm ngon và đơn giản với công thức dễ làm để bạn có được món ngon cho cả nhà thưởng thức.
+                  </p>
+                  <img src = "./lib/egg-1-4.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">            
+              <!-- Center -->
+              <div class = "chicken-recipes__center chicken-recipes__lcr paragraph">
+                <i class="fa-solid fa-forward" onclick = "chiRecLCRForward('.chicken-recipes__center')"></i>       
+                <div class = "chicken-recipes__center--one chicken-recipes--all">
+                  <h2 class = "chicken-recipes__h2 heading-2">Cách nấu Lagu Gà thơm ngon ăn với bánh mì</h2>
+                  
+                  <div class = "chicken-recipes__one-ls">
+                    <ul>
+                      <li>500g Thịt Gà</li>
+                      <li>1 Củ cà rốt</li>
+                      <li>2 Củ khoai Tây</li>
+                      <li>50g Đậu Hà Lan</li>
+                      <li>1lít Nước dừa</li>
+                      <li>Hành tím băm</li>              
+                      <li>Tỏi băm</li>
+                    </ul>
+                    <ul>
+                      <li>Tiêu</li>
+                      <li>Hạt nêm</li>
+                      <li>Muối</li>
+                      <li>Đường</li>
+                      <li>Tương cà</li>
+                      <li>Bột năng</li>
+                    </ul>
+                  </div>
+                  <img src = "./lib/egg-2-1.jpg">
+                </div>
+
+                <div class = "chicken-recipes__center--two chicken-recipes--all ttf-none">
+                  <h2 class = "chicken-recipes__h2 heading-2">Bước 1: Sơ chế</h2>
+                  <p>
+                    Rửa sạch thịt gà, chặt thành miếng to, nên chọn phần má đùi gà để thịt được nhiều hơn. Ướp 500gr thịt gà với 1 muỗng canh hạt nêm, ½ muỗng canh muối, 1 muỗng canh tiêu, 1 muỗng canh hành tím băm, 1 muỗng canh tỏi băm, 2 muỗng canh tương cà. Trộn đều thịt gà cho thấm gia vị và ướp trong khoảng 20 phút để lagu gà đậm đà.
+                    <br><br>Tỉa hoa cà rốt, cắt dày, khoai tây rửa sạch bổ làm tư.
+                  </p>
+                  <img src = "./lib/egg-2-2.jpg">
+                </div>
+
+                <div class = "chicken-recipes__center--three chicken-recipes--all ttf-none">
+                  <h2 class = "chicken-recipes__h2 heading-2">Bước 2: Chế biến</h2>
+                  <p>
+                    Làm nóng chảo với một ít dầu ăn, cho bơ vào đảo đều cho thơm, kế đến cho cà rốt và khoai tây vào xào cho săn lại khoảng 5 phút rồi tắt bếp.
+                    <br><br>Đặt nồi lên bếp với một ít dầu ăn, cho tỏi băm và hành tím vào phi thơm, sau đó cho hành tây vào đảo đều. Tiếp theo cho thịt gà đã ướp vào xào cho đến khi thịt gà săn lại. Cho 1 lít nước dừa xiêm vào nồi, cho đậu Hà Lan và hỗn hợp cà rốt khoai tây đã xào vào hầm cho đến khi lagu gà mềm.
+                    <br><br>
+                  </p>
+                  <img src = "./lib/egg-2-3.jpg">
+                </div>
+
+                <div class = "chicken-recipes__center--four chicken-recipes--all ttf-none">
+                  <p class = "four-p">
+                    Nêm gia vị với 2 muỗng canh hạt nêm, 5 muỗng canh đường, ½ muỗng canh muối, 5 muỗng canh tương cà. Đến khi nước sôi cho thêm 50ml nước bột năng vào, khuấy đều để hỗn hợp được sệt. Khi gần tắt bếp cho hành tây vào đun đến khi hành tây chín là hoàn thành lagu gà.
+                    <br><br>Múc lagu gà ra tô, rắc thêm chút rau mùi cho thơm và thưởng thức khi còn nóng với bánh mì. Đây là món ăn ngon, bạn có thể chấm thịt gà với muối tiêu chanh cho thêm phần đậm đà hương vị. Cách nấu lagu gà ngon thì thịt gà mềm, rau củ ngọt thanh. Bạn có thể dùng bánh mì chấm ăn cùng với nước súp lagu gà nhé. Gà nấu lagu mang hương vị đặc trưng này sẽ là món ngon cuối tuần tuyệt vời cho cả nhà.
+                  </p>
+                  <img src = "./lib/egg-2-4.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">            
+              <!-- Right -->
+              <div class = "chicken-recipes__right chicken-recipes__lcr paragraph">
+                <i class="fa-solid fa-forward" onclick = "chiRecLCRForward('.chicken-recipes__right')"></i>       
+                <div class = "chicken-recipes__right--one chicken-recipes--all">
+                  <h2 class = "chicken-recipes__h2 heading-2">Làm món gà kho chinh phục mọi thực khách</h2>
+                  
+                  <div class = "chicken-recipes__one-ls">
+                    <ul>
+                      <li>500g Thịt Gà</li>
+                      <li>4 củ sả</li>
+                      <li>1 củ gừng tươi</li>
+                      <li>1 muỗng canh dầu ăn</li>
+                      <li>¼ thìa cà phê tiêu xay</li>
+                    </ul>
+                    <ul>
+                      <li>10g hành lá</li>
+                      <li>1/6 thìa cà phê bột ngọt</li>
+                      <li>2 củ hành tím</li>
+                      <li>1 muỗng canh đường</li>
+                    </ul>
+                  </div>
+                  <img src = "./lib/egg-3-1.jpg">
+                </div>
+
+                <div class = "chicken-recipes__right--two chicken-recipes--all ttf-none">
+                  <h2 class = "chicken-recipes__h2 heading-2">Bước 1: Sơ chế</h2>
+                  <p>
+                    Hành tím và sả bóc vỏ, rửa sạch, để ráo nước. Hành tím đem đập dập, băm nhỏ rồi để riêng. ớt bỏ cuống rửa sạch, để ráo nước. Gà chặt thành những miếng vừa ăn.
+                    <br><br>Lấy rượu trắng, muối biển, gừng chà xát thật kỹ để khử mùi hôi của gà. Sau đó , rửa sạch gà với nước, cắt gà với các miếng nhỏ vừa ăn. Cho thêm  1 thìa nước mắm, ½ thìa tiêu xay, ½ thìa bột ngọt, 1 thìa dầu ăn, nửa củ gừng cắt sợi, trộn đều các hỗn hợp rồi ướp lên gà. Ướp trong khoảng 15 phút.
+                  </p>
+                  <img src = "./lib/egg-3-2.jpg">
+                </div>
+
+                <div class = "chicken-recipes__right--three chicken-recipes--all ttf-none">
+                  <h2 class = "chicken-recipes__h2 heading-2">Bước 2: Chế biến</h2>
+                  <p>
+                    Cho vào trong chảo một ít dầu ăn, đến khi dầu sôi lên thì cho phần tỏi, hành tím đã băm nhuyễn vào. Sau đó sẽ cho vào 1 muỗng canh đường rồi nấu lên đến khi hỗn hợp chuyển sang màu vàng.
+                    <br><br>Sau đó, cho phần gà đã ướp gia vị vào, xào cho phần gà được săn lại. Khi xào cần để lửa lớn để cho phần gà không ra nước nhiều.
+                    Đến khi phần gà đã săn lại, đổ thêm 200ml nước ( nếu có nước dừa thì có thể dùng, nước dừa sẽ làm cho gà có vị ngọt thanh hơn), sau đó cho 2 muỗng canh nước mắm vào và cho vào 1 muỗng canh đường rồi đảo đều lên.
+                  </p>
+                  <img src = "./lib/egg-3-3.jpg">
+                </div>
+
+                <div class = "chicken-recipes__right--four chicken-recipes--all ttf-none">
+                  <p class = "four-p">
+                    Tiếp theo, để lửa lớn cho món ăn được sôi lên, sau khi sôi lên thì hạ xuống lửa nhỏ xuống để cho phần gia vị kho thầm đều trong thịt gà và kho thêm 20 phút nữa.
+                    Trong lúc kho, nhớ trở đều miếng thịt gà để cho gà được chín đều hết các mặt.
+                    <br><br>Sau 20 phút, phần thịt kho cũng đã chín đều, phần nước kho cũng đã sánh lại. Bây giờ, chúng ta sẽ cho phần ớt băm vào và trộn đều.
+                    Cuối cùng thì món ăn thịt gà kho cũng đã hoàn thành, chúng ta có thể nêm nếm lại cho phù hợp với khẩu vị của gia đình mình.
+                  </p>
+                  <img src = "./lib/egg-3-4.jpg">
+                </div>
+              </div>
+            </div>                
+          </div>  
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#the-carousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          </a>
+            <a class="carousel-control-next" href="#the-carousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          </a>  
+        </div>
+      </div>      
+      <div id = "egg-recipes">
+        <div class = "box--center">  
+          <div class="container">
+            <input type="radio" name="slider" class="d-none" id="s1" checked>
+            <input type="radio" name="slider" class="d-none" id="s2">
+            <input type="radio" name="slider" class="d-none" id="s3">
+
+            <div class="cards">
+              <label for="s1" id="slide1">        
+                    <div class = "btn" >
+                      <div class="flip-box">
+                        <div class="flip-box-inner">     
+
+                          <div class="flip-box-front">
+                            <div class="card">
+                              <!-- style="width:430px; height:646px" -->
+                              <div class="image">
+                                <img src="./lib/s1-1.jpg" alt="">
+                                <div class="dots">
+                                  <div class="dot1"></div>
+                                  <div class="dot2"></div>
+                                  <div class="dot3"></div>
+                                </div>
+                              </div>
+                              <div class="infos">
+                                <span class="name">Khoai Tây Bọc Trứng Chiên Xù</span>
+                                <span class="lorem">
+                                  <div class = "lorem-list">
+                                    <ul>
+                                      <li>Khoai tây 200 Gr</li>
+                                      <li>Hành tây 1 Củ</li>
+                                      <li>Nấm đông cô 20 Gr</li>
+                                      <li>Trứng gà 3 Quả</li>
+                                      <li>Hạt nêm 1.50 Muỗng cà phê</li>
+                                      <li>Dầu ăn 300 ml</li>
+                                      <li>Dầu hào 1 Muỗng canh</li>
+                                    </ul>   
+                                    <ul>
+                                      <li>Giấm táo 2 Muỗng cà phê</li>
+                                      <li>Rượu trắng 1/2 Muỗng canh</li>
+                                      <li>Hành lá 1 Nhánh</li>
+                                      <li>Cà rốt 1/4 Củ</li>
+                                      <li>Bột chiên giòn 3 Muỗng canh</li>
+                                      <li>Bột chiên xù 1 Chén</li>
+                                    </ul>              
+                                  </div>
+                                </span>
+                              </div>
+                              <a class="btn-contact" onclick="btnRota(1)">Lật</a>   
+                            </div>
+                          </div>
+
+                          <div class="flip-box-back">
+                            <div class="card">
+                              <!-- style="width:430px; height:646px" -->
+                              <div class="image-back">
+                                <div class = "image-gird">
+                                  <img src = "./lib/s1-2.jpg">
+                                  <img src = "./lib/s1-3.jpg">
+                                  <img src = "./lib/s1-4.jpg">
+                                </div>
+                                <div class="dots">
+                                  <div class="dot1"></div>
+                                  <div class="dot2"></div>
+                                  <div class="dot3"></div>
+                                </div>
+                              </div>
+                              <div class="infos">
+                                <span class="name">Hướng dẫn thực hiện</span>
+                                <span class="lorem">
+                                  <b>1</b>. Khoai tây gọt vỏ, cắt nhỏ. Nấm ngâm nước cho nở rồi cắt nhuyễn. Hành tây và cà rốt cắt nhuyễn. Trứng gà đánh tan, cho bột chiên giòn và bột chiên xù ra 2 đĩa riêng. Đánh tan 1 trứng gà.
+                                  <br><b>2</b>. Luộc chín 2 trứng gà rồi bóc vỏ. Khoai tây đem hấp chín rồi nghiền nhuyễn.
+                                  <br><b>3</b>. Trong 1 tô lớn, trộn đều khoai tây nghiền với hành tây, nấm, cà rốt và 1 muỗng cà phê hạt nêm.
+                                  <br><b>4</b>. Múc hỗn hợp khoai tây bọc kín lấy trứng gà đã bóc vỏ.
+                                  <br><b>5</b>. Lần lượt lăn viên khoai tây bọc trứng qua bột chiên giòn, lòng trứng rồi cuối cùng là bột chiên xù. Chỗ khoai tây còn dư thì vê thành những viên nhỏ rồi cũng lần lượt lăn qua bột, trứng như bình thường.
+                                  <br><b>6</b>. Đun nóng già 300ml dầu ăn, cho viên khoai tây bọc trứng và cá viên khoai tây nhỏ vào chiên chín vàng giòn thì gắp ra để ráo dầu.
+                                  <br><b>7</b>. Cho vào chảo 1/4 chén nước lọc, 1 muỗng canh dầu hào, 2 muỗng cà phê giấm táo, 1/3 muỗng cà phê hạt nêm, 1/2 muỗng canh bột năng, đun và khuấy đều cho hỗn hợp sệt thì tắt bếp, thêm 1/2 muỗng canh rượu vào khuấy đều lên để làm nước sốt.
+                                  <br><b>8</b>. Bày trí đẹp mắt và thưởng thức.
+                                  </span>
+                              </div>
+                              <a class="btn-contact" onclick="btnRota(1)">Lật</a>   
+                            </div>
+                          </div>    
+                        </div>  
+                      </div>  
+                    </div>
+                
+              </label>
+              
+              <label for="s2" id="slide2">        
+                    <div class = "btn" >
+                      <div class="flip-box">
+                        <div class="flip-box-inner">     
+
+                          <div class="flip-box-front">
+                            <div class="card">
+                              <!-- style="width:430px; height:646px" -->
+                              <div class="image">
+                                <img src="./lib/s2-1.jpg" alt="">
+                                <div class="dots">
+                                  <div class="dot1"></div>
+                                  <div class="dot2"></div>
+                                  <div class="dot3"></div>
+                                </div>
+                              </div>
+                              <div class="infos">
+                                <span class="name">Cơm Cuộn Trứng - Omurice</span>
+                                <span class="lorem">
+                                  <div class = "lorem-list">
+                                    <ul>
+                                      <li>Cơm 200 Gr</li>
+                                      <li>Trứng gà 3 Quả</li>
+                                      <li>Hành tây 50 Gr</li>
+                                      <li>Thịt gà 150 Gr</li>
+                                      <li>Tương cà 3 Muỗng canh</li>
+                                      <li>Dầu ăn 2 Muỗng canh</li>
+                                      <li>Bơ lạt 5 Gr</li>
+                                    </ul>                                       
+                                  </div>
+                                </span>
+                              </div>
+                              <a class="btn-contact" onclick="btnRota(2)">Lật</a>   
+                            </div>
+                          </div>
+
+                          <div class="flip-box-back">
+                            <div class="card">                              
+                              <div class="image-back">
+                                <div class = "image-gird">
+                                <img src = "./lib/s2-2.jpg">
+                                <img src = "./lib/s2-3.jpg">
+                                <img src = "./lib/s2-4.jpg" alt="">
+                                </div>
+                                <div class="dots">
+                                  <div class="dot1"></div>
+                                  <div class="dot2"></div>
+                                  <div class="dot3"></div>
+                                </div>
+                              </div>
+                              <div class="infos">
+                                <span class="name">Hướng dẫn thực hiện</span>
+                                <span class="lorem">
+                                  <b>1</b>. Làm nóng chảo với 2 muỗng canh dầu ăn, cho 50gr hành tây cắt hạt lựu vào xào thơm. Khi hành chuyển trong cho 150gr thịt gà cắt nhỏ vào, xào cho thịt gà chín. Có thể thay thế thịt gà bằng thịt heo cho món cơm cuộn trứng - omurice tùy theo sở thích của gia đình bạn.
+                                  <br><b>2</b>. Thêm 200gr cơm nguội, xào cho cơm tơi ra thì thêm vào 3 muỗng canh tương cà, 1 ít muối, 1 ít tiêu, xào đều tay. Khi cơm và thịt gà áo đều một lớp màu đỏ đẹp của tương cà thì múc cơm ra chén, để riêng.
+                                  <br><b>3</b>. Đánh tan 3 quả trứng với 1 ít muối. Làm nóng chảo, cho vào 5gr bơ lạt, đợi bơ chảy hết thì đổ trứng vào, dùng đũa dàn đều cho mặt dưới của trứng chín đều, mặt trên vẫn còn hơi ướt. Để làm cơm cuộn trứng - omurice được đẹp thì mặt phẳng trứng chiên phải to và được dàn mỏng đều.
+                                  <br><b>4</b>. Cách làm cơm cuộn trứng: Đổ chén cơm chiên lúc nãy lên trên trứng. Dùng đũa dàn cơm sao cho cơm nằm gọn 1 đường trong lòng trứng, chừa 2 mép 2 bên để một lát ta sẽ gấp 2 mép đó và bọc cơm lại. Dùng phới dẹt hoặc sạn mỏng để bọc trứng lại dễ dàng hơn.
+                                  <br><b>5</b>. Cho cơm cuộn trứng - omurice ra đĩa (lật mặt trứng chiên tiếp xúc với chảo lên trên), giấu mép trứng xuống đáy đĩa. Cơm chiên bọc trứng thường được ăn cùng tương cà để tạo thêm hương vị và tăng cảm giác ngon miệng.
+                                  </span>
+                              </div>
+                              <a class="btn-contact" onclick="btnRota(2)">Lật</a>   
+                            </div>
+                          </div>    
+                        </div>  
+                      </div>  
+                    </div>
+                
+              </label>
+
+              <label for="s3" id="slide3">        
+                    <div class = "btn" >
+                      <div class="flip-box">
+                        <div class="flip-box-inner">     
+
+                          <div class="flip-box-front">
+                            <div class="card">
+                              <!-- style="width:430px; height:646px" -->
+                              <div class="image">
+                                <img src="./lib/s3-1.jpg" alt="">
+                                <div class="dots">
+                                  <div class="dot1"></div>
+                                  <div class="dot2"></div>
+                                  <div class="dot3"></div>
+                                </div>
+                              </div>
+                              <div class="infos">
+                                <span class="name">Trứng Lòng Đào Sốt Thái</span>
+                                <span class="lorem">
+                                  <div class = "lorem-list">
+                                    <ul>
+                                      <li>Trứng gà 10 Quả
+                                      <li>Thịt heo bằm 100 Gr
+                                      <li>Muối 1 Muỗng cà phê
+                                      <li>Giấm 1 Muỗng canh
+                                      <li>Nước mắm 4 Muỗng canh
+                                      <li>Đường trắng 2 Muỗng canh
+                                      <li>Nước dùng 2 Muỗng canh
+                                    </ul>            
+                                    <ul>
+                                      <li>Hành tím 30 Gr
+                                      <li>Hành lá 10 Gr
+                                      <li>Tiêu 1 Muỗng cà phê
+                                      <li>Chanh 2 Trái
+                                      <li>Ớt 8 Trái
+                                      <li>Ớt bột 2 Muỗng canh
+                                      <li>Nước cốt tắc 1 Muỗng canh
+                                    </ul>                           
+                                  </div>
+                                </span>
+                              </div>                              
+                              <a class="btn-contact" onclick="btnRota(3)">Lật</a>   
+                            </div>
+                          </div>
+
+                          <div class="flip-box-back">
+                            <div class="card">
+                              <div class="image-back">
+                                <div class = "image-gird">
+                                <img src = "./lib/s3-2.jpg">
+                                <img src = "./lib/s3-3.jpg">                                  
+                                <img src = "./lib/s3-4.jpg" alt="">
+                                </div>
+                                <div class="dots">
+                                  <div class="dot1"></div>
+                                  <div class="dot2"></div>
+                                  <div class="dot3"></div>
+                                </div>
+                              </div>
+                              <div class="infos">
+                                <span class="name">Hướng dẫn thực hiện</span>
+                                <span class="lorem">
+                                  <b>1</b>. Món trứng lòng đào rất dinh dưỡng nhưng để đảm bảo vệ sinh an toàn thực phẩm, các bạn nên chọn mua trứng có nguồn gốc và hạn sử dụng rõ ràng. Cho muối, giấm vào nồi, cho trứng vào luộc 10 phút, vớt trứng bỏ vào thau nước đá thật lạnh ngâm 5 phút rồi bóc vỏ.(Muối, giấm sẽ giúp trứng không bị nứt vỏ khi luộc, nước đá thật lạnh sẽ dễ dàng bóc vỏ trứng).
+                                  <br><br><b>2</b>. Luộc chín thịt heo lấy nước dùng, cắt và xay thịt ra cho nhỏ. Cho nước mắm, đường, nước cốt tắc, nước dùng, hành tím, ớt trái, ớt bột vào quấy tan đường.
+                                  <br><br><b>3</b>. Cho trứng, thịt xay, hỗn hợp nước mắm, chanh, hành, tiêu vào trộn đều. Trong một cái tô sạch, cho trứng và rưới đều sốt thịt.
+                                  <br><br><b>4</b>. Khi ăn dùng muỗng xắn đôi trứng, lòng đào béo béo chảy ra hòa quyện với sốt chua cay mặn ngọt, thêm ít thịt thật ngon và lạ miệng. Ngại gì mà không thử liền nào!
+                                </span>
+                              </div>
+                              <a class="btn-contact" onclick="btnRota(3)">Lật</a>   
+                            </div>
+                          </div>    
+                        </div>  
+                      </div>  
+                    </div>
+                
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Chân trang -->
+    <footer id = "footer">
+      <div class = "footer__say">
+        <!-- iframe -->
+        <iframe src="assets/FooterSay/index.html"></iframe>        
+      </div>
+      <div class = "contact__container">
+        <div class = "grid">
+          <div class = "row">            
+            <div class = "col-3">
+              <div class = "about">
+                <img class = "footer-logo-img" src = "./lib/ok-steptodown.com736310.png">
+                <p>
+                  Với thương hiệu “Trứng gà sạch”, chúng tôi cam kết không sử dụng các chất cấm trong chăn nuôi. Đàn gà được chăm sóc khỏe mạnh với nguồn thức ăn được kiểm định chặt chẽ. Sản phẩm không tồn dư kháng sinh.
+                </p>
+              </div>
+            </div>          
+            <div class = "col-3">
+              <div class = "policy">
+                <h3 class = "contact--header">CHÍNH SÁCH</h3>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Chính sách đổi hàng</a>
+                </p>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Bảo mật thông tin</a>
+                </p>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Chính sách giao nhận</a>
+                </p>
+              </div>
+            </div>
+            <div class = "col-3">
+              <div class = "support">
+                <h3 class = "contact--header">HỖ TRỢ KHÁCH HÀNG</h3>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Chăm sóc khách hàng</a>
+                </p>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Hướng dẫn mua hàng</a>
+                </p>
+              </div>
+            </div>            
+            <div class = "col-3">
+              <div class = "info">                
+                <h3 class = "contact--header">THÔNG TIN LIÊN HỆ</h3>
+                <p class = "contact--item">
+                  <a href = "#">huu4123@gmail.com</a>                  
+                </p>
+                <p class = "contact--item">
+                  <a href = "https://hcodehub.github.io">hcodehub.github.io</a>
+                </p>
+                <p class = "contact--item">
+                  <span>☎️ Hotline Bán Hàng: 0346440535</span>
+                </p>
+                <p class = "contact--item">
+                  <span>⛪ Địa chỉ: Xã Yên Phụ, Huyện Yên Phong, Tỉnh Bắc Ninh</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class = "row">            
+            <div class = "col-6">
+              <div class = "policy">
+                <h3 class = "contact--header">CHÍNH SÁCH</h3>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Chính sách đổi hàng</a>
+                </p>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Bảo mật thông tin</a>
+                </p>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Chính sách giao nhận</a>
+                </p>
+              </div>
+            </div>
+            <div class = "col-6">
+              <div class = "support">
+                <h3 class = "contact--header">HỖ TRỢ KHÁCH HÀNG</h3>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Chăm sóc khách hàng</a>
+                </p>
+                <p class = "contact--item">
+                  <a href = "https://www.facebook.com/nobita.nguyen.7906932/">Hướng dẫn mua hàng</a>
+                </p>
+              </div>
+            </div>            
+          </div>
+
+          <div class = "row">       
+            <div class = "col-6">
+              <div class = "about">
+                <img class = "footer-logo-img" src = "./lib/ok-steptodown.com736310.png">
+                <p>
+                  Với thương hiệu “Trứng gà sạch”, chúng tôi cam kết không sử dụng các chất cấm trong chăn nuôi. Đàn gà được chăm sóc khỏe mạnh với nguồn thức ăn được kiểm định chặt chẽ. Sản phẩm không tồn dư kháng sinh.
+                </p>
+              </div>
+            </div>     
+            <div class = "col-6">
+              <div class = "info">                
+                <h3 class = "contact--header">THÔNG TIN LIÊN HỆ</h3>
+                <p class = "contact--item">
+                  <a href = "#">huu4123@gmail.com</a>                  
+                </p>
+                <p class = "contact--item">
+                  <a href = "https://hcodehub.github.io">hcodehub.github.io</a>
+                </p>
+                <p class = "contact--item">
+                  <span>☎️ Hotline Bán Hàng: 0346440535</span>
+                </p>
+                <p class = "contact--item">
+                  <span>⛪ Địa chỉ: Xã Yên Phụ, Huyện Yên Phong, Tỉnh Bắc Ninh</span>
+                </p>
+              </div>
+            </div>                        
+          </div>          
+        </div>
+        <span class = "copyright">          
+          © Bản quyền thuộc về
+          <a href = "https://www.facebook.com/nobita.nguyen.7906932/"> HuuKevin</a> Thiết Kế Web Chuẩn SEO Bởi
+          <a href = "https://www.facebook.com/HCodeC"> HCode</a>          
+        </span>
+
+        <span class = "copyright">          
+          © Bản quyền thuộc về
+          <a href = "https://www.facebook.com/nobita.nguyen.7906932/"> HuuKevin</a>
+          <br>Thiết Kế Web Chuẩn SEO Bởi
+          <a href = "https://www.facebook.com/HCodeC"> HCode</a>          
+        </span>
+      </div>
+    </footer>
+  </body>
+  <!-- lưu ý: file js phải để cuối thẻ body -->
+  <!-- đường dẫn js -->
+  <script src = "assets/script.js"></script>
+
+  <script>
+  </script>
+</html>

@@ -1,0 +1,213 @@
+@font-face {
+  font-family: Nocturne-Serif;
+  src: url(https://chuong3x.github.io/natalieandcharlie/asset/font/text-fonts/nocturne_serif_light.ttf) format('truetype');
+}
+
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family: "The Historia Demo";
+  src: url("https://thobui997.github.io/public/fonts/TheHistoriaDemo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ẩn thanh cuộn */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+}
+
+ /* :root - tham chiếu phần tử gốc(html) */
+:root {
+  /* màu */
+  --primary-color: #613842;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --border-color: #dbdbdb;
+  --beige-color: #fed700;
+
+  --current-color1: #fad00c;
+  --current-color2: #eceaed;
+
+  /* chiều cao */
+  --view-height: 100vh; /*viewport*/
+  --view-width: 100vw;
+  --screen-height: 1010px; /*set height*/
+  
+  --navbar-height: 50px;
+  --header-with-search-height: calc(var( --header-height ) - var( --navbar-height ));
+
+  --height-cards: 840px;
+  --width-cards: 840px;
+
+  --text-nav-size: 1.4rem;
+}
+
+/* Chọn tất cả các thẻ */
+* {
+  /* xác định cách tính chiều rộng và chiều cao của một phần tử */
+  /* Thuộc tính kế thừa này từ phần tử cha mẹ của nó */
+  box-sizing: inherit;    
+  /* loại điểm đánh dấu mục danh sách trong danh sách */
+  list-style-type: none;
+  /* Bỏ gạch chân mặc định của thẻ a */
+  text-decoration: none;
+
+  /* resert */
+  margin: 0px;
+  padding: 0px;
+}
+
+/* áp dụng tất cả html */
+html {
+  /* 10px */
+  font-size: 62.5%;
+
+  /* Chỉ định phông chữ cho một phần tử */    
+  /* Nếu trình duyệt không hỗ trợ phông chữ đầu tiên, nó sẽ thử phông chữ tiếp theo */
+  font-family: Helvetica, Arial, Roboto, sans-serif;
+  
+  /* giữ nguyên kích thước width height */
+  box-sizing: border-box;  
+
+  /* Chỉ định xem có tạo hiệu ứng mượt mà cho vị trí cuộn thay vì nhảy thẳng hay không khi người dùng nhấp vào liên kết trong hộp có thể cuộn */
+  /* smooth, Cho phép một "trượt hiệu ứng" hoạt động trơn tru giữa các phần tử trong hộp cuộn */
+  scroll-behavior: smooth;
+}
+
+/* class lưới */
+.grid {
+  width: 1200px;
+  /* chiều rộng tối đa khi màn hình quá nhỏ */
+  max-width: 100%;
+  /* lề */
+  margin: 0 auto;  
+}
+
+/* full chiều rộng */
+.grid__full-width {
+  width: 100%;
+}
+
+/* dạng cột */
+.gird__row {
+  /* hiển thị: uốn cong */
+  display: flex;
+  /* Chỉ định xem các mục linh hoạt có nên xuống dòng hay không */
+  /* wrap Chỉ định rằng các mặt hàng linh hoạt sẽ bọc nếu cần thiết */
+  flex-wrap: wrap;
+}
+
+.row {
+  /* hiển thị: uốn cong */
+  display: flex;
+  /* Chỉ định xem các mục linh hoạt có nên xuống dòng hay không */
+  /* wrap Chỉ định rằng các mặt hàng linh hoạt sẽ bọc nếu cần thiết */
+  flex-wrap: wrap;
+
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+/* 3/12 */
+.col-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 25%;
+}
+
+
+/* Modal */
+.modal {
+  /* vị trí: khung trình duyệt */
+  position: fixed;
+  /* khoảng cách với lề class cha */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* hiển thị: uốn cong */
+  display: flex;
+  animation: fadeIn linear 0.1s;
+}
+
+.modal_overlay {
+  /* vị trí: tuyệt đối */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* màu nền */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_body {
+  /* biến Local */
+  --growth-from: 0.7;
+  --growth-to: 1;
+  /* Căn giữa */
+  margin: auto;
+  /* vị trí: tương đối */
+  position: relative;
+  /* Phần tử có thứ tự ngăn xếp lớn hơn luôn ở trước phần tử có thứ tự ngăn xếp thấp hơn */
+  z-index: 1;
+  /* Thuộc tính tốc ký, hoạt ảnh */
+  /* growth, tên chức năng */
+  animation: growth linear 0.1s;
+}
+
+/* Button style */
+.btn {
+  /* chiều rộng tối thiểu */
+  min-width: 142px;  
+  height: 34px;
+  /* Bỏ gạch chân mặc định của thẻ a */
+  text-decoration: none;
+  /* ranh giới: không có */
+  border: none;
+  /* bo tròn góc */
+  border-radius: 2px;
+  /* kích thước phông chữ */
+  font-size: 1.5rem;
+  /* đệm */
+  padding: 0px 12px;
+  /* Một đường được vẽ bên ngoài đường viền của phần tử */
+  outline: none;
+  /* chỉ định con trỏ chuột sẽ được hiển thị khi trỏ qua một phần tử */
+  cursor: pointer;
+  color: var(--text-color);
+  /* hiển thị: uốn cong */
+  display: flex;
+  /* căn chỉnh mặt hàng: trung tâm */
+  align-items: center;
+  /* căn nội dung ra giữa */
+  justify-content: center;
+  /* chiều cao dòng */
+  line-height: 1.6rem;
+}
+
+.btn.btn--normal:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--size-s {
+  height: 32px;
+  font-size: 12px;
+  /* đệm */
+  padding: 0px 8px;
+}
+
+.btn.btn--primary {
+  /* màu */
+  color: var(--white-color);
+  /* màu nền */
+  background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+  color: #949494;
+  cursor: default;
+  background-color: #c3c3c3;
+}
