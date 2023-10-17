@@ -32,7 +32,8 @@ img {
 #header {
   width: auto;
   height: var(--view-height);
-  background-image: url("./lib/OK-3.png");
+  /* background-color: #fa9e1b; */
+  background-image: url(https://lh3.googleusercontent.com/fife/AK0iWDyroLHMPrNKlhvMSNXliR2h5q2WyQRD2aUQC24qkETmgfIZeRZKS_yFtTWv3jD0ilsa47yERK_Y_l-1b0Hg3K-i8v8SbSGVdKw-U37oLGV2tu3sldLuEPuZk1LoDaH4EdmfZPuvR1ZqtTE_OiE5TOAn5FA6mtU08wR4d1c8q7gD5mPuOzfted6fT-bM0Lxx2sdmd0-vCPQATprej-NVYii1FQu8As8bMEpasungon6oTiOfEoGjaSJwGjKqs3CXdZQJWCLmV40uRt-BSsWhXKiHGKvaeTipWFqscfEFgorTVtpzIiGMPoHo2ypIWx9lmkjsfglHCHh5aL4jDoVatDgnSbU13J9YmW6hF56CglMreISWYN_cxTBUnL2zADj9B-K64AX3_BQXWp4wgELSJFxH_zjdoP79akRehSsLQ85iOl1ZjstFb2uyR_SChHrcUmG6iWHAxpZE-7fOAglQLuKK89VHzFhcQpq7-GqGi-AVZaTogIPGK--xIWsRbg5ugyz9vQCkxRYlgeltX60PgZsgkAfG9tXvji4WQosDW3zKxyeSF28arNCWKV6TOop9LkK2Fc35DiHIZAzTKzQDtmSC2bbgvmAmees1yjX7jennmskMvjrIUSBrjF567uKOQM-sUW8058R2cSwPB9cssEDpCw7YzB8fQpSlC3bOzw5jnpqnF0BoS01eBgPD52CoyqfXlSUJhUlya9FPVBV3R-kihhgmmX6igA4w_LKaKxBOXSu4fi0xjKGdnrSv-BS9CVEi-UIJEK-8oAg-qwQWYUyCu7-fcB4GkX7zS4UdS6cIEJTf0VokU7IQjtx3bElRoDi2i-MLu9yhK_GaSyGGwAS8tCQ6sVfWYzxfKlLrZ3yF9t60eXAdaLnkukNnlu5bxywzMf7FRc_G_BlMzjOzKukD60lzQMYRUB46Ypm3fyT8JddiZt4HKmH5xZQLJocFK8TMvReB_xh3fQf9lIVv_Pz4n5nSn1_8P-dNzquPAIPvw-O6bTy_bt9Uuslq7w9lT1pEtmyjs6tAumqL4i3elH1hHyAvCLPPL4n-ZkhLmvnvOgvuroQp773Sveh6S1w2TAjilXj36vGcwESadD7U_Fwryh-2IwQ3Ks0v-GWrgfwYa-FU2l1pDKeOnpsbXdvsj0VZv8F7uFUbF4_EW__KQLWc8yMLs6AyvIunCdnMOmD5guUc2HpwYkbWkH6kl_OGr8zm3netJHyxG5tbSj7n-CZUcpT9AbxMNaAkmhNiK2rGupdFJsb9bJfYK8M18__FVdRhZqLzz1mvCz2a1Zlj4mQt_iBEjJ7ijmeEM30pxUm5o1f_7xglms7b-ELLMXbz3lK5TBozvI8WSkqimaAtmu7ExSHAIhOBVQV4UpetCIMpEym9Wj4gB4HduSaNYXZEe7Qn1ySELD3qiOOr2tHmoSXlZhys5cYYU50LouNsy14BzAJ__RRlQInD8WqqEaa8OsXNpe5_Biz4c9TQ4H_E12FjsmDxLOs3RKY60Q_Jk75zSwrMcc_jmg6_wvbwWlfAS7qOeLqMo8vyBYZI-gBF3vMAcdpclZBS_zBeCOUUjOWT9xhUfiFMmfGYOs4P=w1413-h1003);
 }
 
 #header > span {
@@ -61,6 +62,8 @@ img {
 
   right: 2%;
   bottom: 3%;
+  /* right: 4%;
+  bottom: 8%; */
 }
 
 
@@ -79,6 +82,7 @@ img {
   background-color: rgba(0, 0, 0, 0);
 
   z-index: 4;
+  /* background: none !important; */
 }
 
 .open .header__navbar {
@@ -91,6 +95,8 @@ img {
 }
 
 .header__toggler {
+  /* display: none; */
+
   width: 100%;
 
   height: 100vh;
@@ -123,14 +129,20 @@ img {
   font-family: "The Historia Demo", sans-serif;
   text-transform: uppercase;
   font-size: 2.5rem;
+  /* line-height: var(--navbar-height); */
   font-weight: 400;
   color: cornsilk;
   display: block;
   text-shadow: 0.5px 0.5px 1px #000;
+  /* font-size: var(--text-nav-size); */
+  /* text-align: center;
+  padding: 0px 3px;
+  margin: 0 12px; */
 }
 
 .header__navbar-list > li {
   display: inline-block;
+  /* padding: calc((var(--navbar-height) /2) - (var(--text-nav-size) /2)) 10px; */
 }
 
 .header__navbar-list > li > a {
@@ -141,7 +153,7 @@ img {
   padding: 0px 3px;
   margin: 0 12px;
   font-weight: 400;
-  color: #fff;
+  color: black;
   display: block;
   text-shadow: 0.5px 0.5px 1px #000;
 
@@ -244,6 +256,8 @@ img {
 /*  */
 .content {
   width: auto;
+  /* height: 1200px; */
+  /* background-color: whitesmoke; */
 }
 
 /* CHICKEN */
@@ -251,7 +265,9 @@ img {
   display: flex;
   width: auto;
   height: var(--screen-height);  
-  background: url(../lib/bg-chicken.jpg) no-repeat 0 0;
+  /* background-repeat: no-repeat;
+  background-size: 100% 101% !important; */
+  background: url(https://thobui997.github.io/public/images/sitebg.jpg) no-repeat 0 0;
   padding: var(--navbar-height) 16px 0 16px;
 }
 
@@ -270,6 +286,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   padding-right: 12px;
+  /* padding: 83px; */
 }
 
 
@@ -279,6 +296,11 @@ img {
 
   width: 63%;
   height: calc(var(--screen-height) - var(--navbar-height));
+  /* margin-right: 12px; */
+  /* height: var(--screen-height); */
+  /* margin-top: var(--navbar-height); */
+  /* width: calc(var(--view-width) / 2); */
+  /* margin-top: 102px; */
 }
 
 
@@ -318,7 +340,8 @@ img {
 #egg {
   width: auto;
   height: var(--screen-height);  
-  background: url("../lib/bg-go2.jpg") no-repeat 0 0;
+  /* background-size: cover; */
+  background: url(https://thobui997.github.io/public/images/sitebg.jpg) no-repeat 0 0;
   padding: var(--navbar-height) 16px 0 16px;
 }
 
@@ -336,6 +359,7 @@ img {
 .egg__one {  
   opacity: 0;
   padding: 10px 20px 0px 0px;
+  /* padding: calc(var(--navbar-height) + 18px) 40px 0px 20px; */
 }
 
 
@@ -343,16 +367,19 @@ img {
 .egg__one img {
   height: 280px;
   width: 460px;
+  /* width: 530px; */
 }
 
 .egg__one--content {
   margin: 50px 42px 0px 0px;
+  /* margin: 50px 42px 0px 10px; */
 }
 
 /*  */
 .egg__two {
   opacity: 0;
   padding: 48px 0px 48px 20px;
+  /* padding: 30px 0px 30px 0px; */
 }
 
 .egg__two img {
@@ -368,14 +395,17 @@ img {
 .egg__three {
   opacity: 0;
   padding: 0px 20px 0px 0px;
+  /* padding: 0px 40px 0px 20px; */
 }
 
 .egg__three img {
   height: 280px;
   /* Thay đổi kích thước <img> hoặc <video> phù hợp với vùng chứa. */
   object-fit: cover;
+  /* width: 726px; */
 
   width: 423px;
+  /* width: 520px; */
 }
 
 .egg__three--content {
@@ -391,10 +421,11 @@ img {
   height: var(--screen-height);
   position: relative;
   background-size: cover;
-  background-image: url("../lib/bg-go2.jpg");
+  background-image: url(https://i.stack.imgur.com/p9mUO.jpg);
 }
 
 .chicken-recipes__left {
+  /* display: none; */
 }
 
 .chicken-recipes__left--one .chicken-recipes__one-ls {
@@ -402,9 +433,11 @@ img {
 }
 
 .chicken-recipes__center {
+  /* display: none; */
 }
 
 .chicken-recipes__right {
+  /* display: none; */
 }
 
 .four-p {
@@ -436,8 +469,13 @@ img {
   transform: translateX(-50%);  
   border-radius: 30px;
   box-shadow: 5px 7px 9px 0 rgba(138, 141, 143, 0.9);
-  background-image: url("../lib/egg-bg.jpg");
+  background-image: url("https://img6.thuthuatphanmem.vn/uploads/2022/03/15/background-am-thuc-trung-hoa_081318583.jpg");
   width: 940px;
+  /* width: 975px; */
+  /* right: 50%; */
+  /* left: 160px; */
+  /* height: calc(var(--screen-height) - var(--navbar-height) - 50px); */
+  /* width: calc(var(--view-width) - 326px); */
 }
 
 /* làm mờ nền */
@@ -467,6 +505,9 @@ img {
   border-radius: 30px;
   height: 590px;
   width: 780px;
+  /* width: 800px; */
+  /* max-height: 650px; */
+  /* box-shadow: 5px 0 9px 0 rgba(138, 141, 143, 0.9); */
 }
 
 .chicken-recipes__lcr i {
@@ -494,6 +535,13 @@ img {
   margin: 12px 28px 0px;
 
   font-family: cursive;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;    
+  bottom: 0px;
+  top: 0px; */
 }
 
 .chicken-recipes__h2 {
@@ -508,13 +556,17 @@ img {
 .carousel-control-prev,
 .carousel-control-next {
   width: 5% !important;
+  /* width: 6% !important; */
 }
 
 /* Make the image fully responsive */
 .carousel-inner box {
+  /* width: 100%;
+  height: 100%; */
 }
 
 .box {
+  /* margin: 0 44px 0 44px; */
 }
 
 .carousel-item {
@@ -528,8 +580,10 @@ img {
   width: auto;
   height: var(--screen-height);  
   background-size: cover;
-  background-image: url("../lib/bg-go2.jpg");
+  background-image: url("https://lh3.googleusercontent.com/fife/AK0iWDz2YiPvSiT46RdS2RoznOKlbsJehMxBz8-hbizk6cIV92VpChJNu4xHCQVR58Q9QMaUVbKUmOttf3NQ89O-Q0ZqZIcoh5RwxI3mX_yKC9XIcbEOg0ED-tHJ4HFA2Gt6FwicwLZdT_bBFPVu-tJV1F7z-I7a2HRvsVh9QG3idD5zFIMSYixotI4fKMEFye4ukhDbuzDN6yoniAV1ksRu3gRptpuTuDb0WihThvkwZY0Io09F4L_-gRc2epFo6OLUzmQ0zg83FlDY7DaDU3WDeb5UwTc03NvMIJ61ZE3j_IdlYHgPp3jNpf-fO6-o4bsup_PiP7jGC__xOzUtnntkn52MPxOfJZOgDIE6ABed7Us0WEaGb1oG8Ad4oIIqT7Wb8P3XbzVOuzpKYL5dHWe674N0QeWE1pQsXQZxMqkNbbH7gfiFSNVSNxkUemzZef-1Gj2jAFUeCQQ20Kc7YsUQ_dnwtuYPF7ynuyViGk3qZmYaRhHvqDvwWx7CH1LnGgayOBb_CakloHRcARP13iPyfbSRKjIKfI1m8dW2t_Zwl1wfSHaeys8arHYeh-0Ay_KTVJ7SC5gdAq5PQGLq9kRWsZCgqB7gazELU3MVLmOmD5j0lsxaK-JnH-g9p-mNu6r75iX0nXp_JWtCT7t38y8nWBHbjcv2EdED5TTu3OJBT4Z4mTLzGntICW5C1_AYNaPWZ_6RDjgM9w9AGJznlX4Ab4iuywowpENatrNzyYCLITqg5Ad6L8VhzXoz0aPGjwSTaD-TL_OofBuOTG0nV7oMkCKGrYpZyUKbJYKtj-p64upIJ8Jor1YU8xYd-ryN_-O5pmE1QMFIjpFFlfSE7WwaYT6cgzHFMsuAy7sVvkKRoWBODIoJW6NZjDZyT_yn8rQ2-N3KhdVgGAorETN8tCxxdW9WwdoI3WizUkdMoRNaXYTCDU1paYhpTUV3SBlDZxO5aXOQ-6lsWo3WW_UZE9JUJNu0fWUs3pGYtc0ilENig5bKZ6i0E-gYKJZCvOAjA9eIL6Yqvt1Rq21ZBUTQ5mD2ByylZPAchP9EU1QYx30TU_TWTBEGTujFarpWjsA7Oqh4W0OCcr_AdGYVQMapEY3e22um0vfjPls3RCiArqCfPsfH2avNXWom3XptoKf16chglIztuvSeQ1oB2UyRBIWNmQj5WnZj2oSebn_38U0OnQLnWAzyjL_bL-YWyYsDr9pn5HFF8SAPbodBZ3OZ9fpJOBy0-PTNhcnlYaJKZVMQLBZBuHzRPdDTwrJ5IlpA2b-f7VnRas3pcvQ5fQFXf2j4QAF7KTAqYwRAmCNNkwPhq2OZCQVVCAlwmuZyo0FqZUD8yEcCIvAjSYvHHZWyNnGtsfItxdAceNuryPlueFJqR-E5cgkvgo3Ghrr272PlxRdXqPGJuArucKjbu_PIxLsoufptAfXntE-aOKcbG7n7VCWJCz24-niFW61dwaLBWd-uZoyaQ3YDvyzRZOgCVL6hCBACpPvuBv0cTcwWHmq7H8uL_OepVOOCaWqMIi_n_wYZ76rBGLaqw-nV7MlDRuIGloBVXPZZx0N9_ATaeSzFkH-2xPFc8q1yo8zwXgGX=w1858-h952");
 }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;700&display=swap'); */
 
 .box--center {
   overflow-x: hidden;
@@ -541,6 +595,15 @@ img {
 
   width: 1020px;
   height: var(--screen-height);
+  /* height: 100vh; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232533; */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 a {
@@ -570,8 +633,10 @@ input {
 
 .cards {
   position: relative;
+  /* height: 500px; */
   height: 517px;
   width: 803px;
+  /* margin-bottom: 20px; */
   perspective: 1000px;
   transform-style: preserve-3d;
 }
@@ -580,6 +645,7 @@ input {
   position: absolute;
   height: var(--height-cards);
   width: var(--width-cards);
+  /* height: 952px; */
   left: 0;
   right: 0;
   margin: auto;
@@ -591,6 +657,7 @@ input {
 
 .cards .card {
   position: relative;
+  /* height: 892px; */
   height: var(--height-cards);
   width: var(--width-cards);
   background-color: #323444;
@@ -598,6 +665,7 @@ input {
   padding: 25px 30px;
 
   left: -9px;
+  /* top: 40px; */
 }
 
 .card .image {
@@ -677,6 +745,7 @@ input {
   letter-spacing: 8px;
   margin-bottom: 10px;
   transition: all 0.6s ease;
+  /* padding-left: 25%; */
 }
 
 .infos .lorem {
@@ -693,6 +762,7 @@ input {
 }
 
 .lorem-list ul {
+  /* text-align: left; */
   margin: 0 0 0 80px;
 }
 
@@ -748,6 +818,7 @@ input {
   background-color: transparent;
   width: 400px;
   height: 506px;
+  /* border: 1px solid #f1f1f1; */
   perspective: 1000px;
   border: 0;
 }
@@ -755,10 +826,14 @@ input {
 .flip-box-inner {
   position: relative;
   width: 100%;
+  /* height: 100%; */
+  /* 409px */
   height: var(--height-cards);
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+
+  /* transform: rotateX(0deg); */
 }
 
 .flip-box-inner.rota {
@@ -789,6 +864,8 @@ input {
 
 /* // */
 .flip-box-front img {
+  /* width: 400px;
+  height: 506px; */
 }
 
 
@@ -797,11 +874,13 @@ input {
 #footer {
   width: auto;
   height: var(--screen-height);
+  /* background-color: var(--primary-color); */
 }
 
 .footer__say {
   height: calc(var(--screen-height) - 525px);
-  background: url("../lib/bg-chicken.jpg") no-repeat 0 0;
+  /* background-color: var(--primary-color); */
+  background: url(https://thobui997.github.io/public/images/sitebg.jpg) no-repeat 0 0;
 }
 
 /* iframe */
@@ -815,14 +894,17 @@ input {
 .contact__container {
   height: 525px;
   background-size: cover;
-  background-image: url("../lib/bg-go2.jpg");
+  background-image: url("https://i.stack.imgur.com/p9mUO.jpg");
   padding: 50px 16px 20px 16px;
+  /* padding-top: 50px;
+  padding-bottom: 20px; */
 }
 
 .contact__container::before {
   content: "";
   display: block;
   position: absolute;
+  /* top: 68px; */
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -830,6 +912,8 @@ input {
   transform: translateY(-50px);
 
   height: 525px;
+  /* height: 52%; */
+  /* border-radius: 30px; */
 }
 
 .contact__container .grid .row:nth-child(2),
@@ -908,7 +992,12 @@ input {
 
 .contact--item span {
   line-height: 3rem;
+  /* color: #7d8997; */
   padding: 10px 0;
+  /* text-decoration: none; */
+  /* position: relative; */
+  /* transition: 0.3s linear; */
+  /* right: 0; */
   display: block;
 }
 
@@ -921,6 +1010,7 @@ input {
   font-size: 14px;
   margin-top: 35px;
   position: relative;
+  /* font-weight: 400; */
 }
 
 .copyright:nth-child(3) {
