@@ -32,7 +32,7 @@ img {
 #header {
   width: auto;
   height: var(--view-height);
-  /* background-color: #fa9e1b; */
+  /* background-color: #fa9e1b; .*/
   background-image: url("https://i.imgur.com/m8wjF7e.png");
 }
 
